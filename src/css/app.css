@@ -1,0 +1,205 @@
+@import "tailwindcss";
+@plugin "tailwind-scrollbar";
+@plugin "./bg-stripe.js";
+
+@plugin "daisyui" {
+    exclude: rootscrollgutter;
+}
+
+@plugin "daisyui/theme" {
+    name: "peoplepartner";
+    default: false;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(93% 0 0);
+    --color-base-300: oklch(86% 0 0);
+    --color-base-content: oklch(22.389% 0.031 278.072);
+    --color-primary: #0a3269;
+    --color-primary-content: oklch(100% 0 0);
+    --color-secondary: #2A9CFF;
+    --color-secondary-content: oklch(100% 0 0);
+    --color-accent: oklch(60% 0.118 184.704);
+    --color-accent-content: oklch(100% 0 0);
+    --color-neutral: oklch(0% 0 0);
+    --color-neutral-content: oklch(100% 0 0);
+    --color-info: oklch(60% 0.126 221.723);
+    --color-info-content: oklch(100% 0 0);
+    --color-success: oklch(72% 0.219 149.579);
+    --color-success-content: oklch(100% 0 0);
+    --color-warning: oklch(85% 0.199 91.936);
+    --color-warning-content: oklch(0% 0 0);
+    --color-error: oklch(70% 0.191 22.216);
+    --color-error-content: oklch(0% 0 0);
+    --radius-selector: 2rem;
+    --radius-field: 0.5rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+}
+
+[data-animate="enter"].fade-in {
+    animation: fadeIn 0.5s both;
+}
+
+[data-animate="enter"].fade-in-pop-out {
+    animation: fadeInPopOut 0.5s both;
+}
+
+[data-animate="enter"].fade-in-pop-in {
+    animation: fadeInPopIn 0.5s both;
+}
+
+[data-animate="enter"].fade-in-up {
+    animation: fadeInUp 0.5s both;
+}
+
+[data-animate="enter"].fade-in-down {
+    animation: fadeInDown 0.5s both;
+}
+
+[data-animate="exit"].fade-out {
+    animation: fadeOut 0.3s both;
+}
+
+[data-animate="exit"].fade-out-pop-out {
+    animation: fadeOutPopOut 0.3s both;
+}
+
+[data-animate="exit"].fade-out-pop-in {
+    animation: fadeOutPopIn 0.3s both;
+}
+
+[data-animate="exit"].fade-out-up {
+    animation: fadeOutUp 0.3s both;
+}
+
+[data-animate="exit"].fade-out-down {
+    animation: fadeOutIn 0.3s both;
+}
+
+.btn {
+    border-start-start-radius: var(--join-ss, var(--radius-field));
+    border-start-end-radius: var(--join-se, var(--radius-field));
+    border-end-start-radius: var(--join-es, var(--radius-field));
+    border-end-end-radius: var(--join-ee, var(--radius-field));
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInPopOut {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInPopIn {
+    from {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutPopIn {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes fadeOutPopOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
