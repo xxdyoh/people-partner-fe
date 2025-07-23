@@ -9,7 +9,7 @@ function AuthLayout({ children }) {
                     {children}
                 </div>
             </div>
-            <div className="z-10 flex justify-center items-center w-full min-h-full text-base-100">
+            <div data-animate="enter" className="z-10 flex justify-center items-center w-full min-h-full text-base-100 fade-in-left" style={{animationDelay: '0.3s'}}>
                 <div className="mx-16 max-w-2xl text-start">
                     <span className="font-semibold text-5xl">PEOPLE PARTNER SYSTEM</span><br />
                     <span className="opacity-70 text-xl italic">

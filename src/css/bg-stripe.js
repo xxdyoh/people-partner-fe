@@ -18,9 +18,13 @@ module.exports = plugin(function ({ addUtilities, matchUtilities, theme }) {
             'background-image': `repeating-linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 13px, var(--stripe-color) 13px, var(--stripe-color) 14px )`,
             'background-size': '40px 40px',
         },
-        '.bg-stripe-cross': {
+        '.bg-stripe-cross-diagonal': {
             'background-image': `repeating-linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 13px, var(--stripe-color) 13px, var(--stripe-color) 14px ), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 13px, var(--stripe-color) 13px, var(--stripe-color) 14px )`,
             'background-size': '40px 40px',
+        },
+        '.bg-stripe-cross': {
+            'background-image': `repeating-linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 13px, var(--stripe-color) 13px, var(--stripe-color) 14px ), repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 13px, var(--stripe-color) 13px, var(--stripe-color) 14px )`,
+            'background-size': '14px 14px',
         },
     });
     matchUtilities(

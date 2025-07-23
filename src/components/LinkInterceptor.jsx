@@ -15,8 +15,7 @@ function LinkInterceptor
 
             if ((link.href === '') || (link.pathname === window.location.pathname)) return;
             
-            
-
+    
             if ((link.dataset.transitionTarget != '')) {
                 const transitionTarget = document.querySelector(link.dataset.transitionTarget);
                 if (transitionTarget) {

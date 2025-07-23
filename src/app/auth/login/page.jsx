@@ -12,7 +12,7 @@ function LoginPage() {
             <label className="label">Password</label>
             <input type="text" className="input" placeholder="Name" />
 
-            <TransitionLink href="/admin/dashboard" transitionPageQ="#authLayout" className="btn btn-neutral mt-4 w-full">Login</TransitionLink>
+            <TransitionLink href="/main-menu" selector="#authLayout" className="btn btn-neutral mt-4 w-full">Login</TransitionLink>
             <span>Didn't have an account yet? <TransitionLink href="/auth/sign-up" className="link link-secondary">Sign Up Here</TransitionLink></span>
         </fieldset>
     );
