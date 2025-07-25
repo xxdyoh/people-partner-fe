@@ -3,81 +3,59 @@ import TransitionLink from "@/components/TransitionLink";
 import { useState } from "react";
 
 function Step3Page() {
-  const [hasHolding, setHasHolding] = useState("");
-  const [isRelevant, setIsRelevant] = useState("");
+	const [hasHolding, setHasHolding] = useState("");
+	const [isRelevant, setIsRelevant] = useState("");
 
-  return (
-    <div data-transition-page data-animate="enter" className="w-full px-8 py-4 fade-in-up fade-out-pop-up">
-      <div className="w-full mx-auto p-4">
-        <div className="card bg-slate-100 shadow-xl">
-          <div className="card-body overflow-x-auto">
-            <h2 className="card-title text-2xl">3. Masukkan informasi sebagai berikut</h2>
-            <ul className="w-full space-y-4 mt-5">
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Nama Legal Perusahaan</label>
-                <select className="select select-bordered py-3  flex-1">
-                  <option>Ya</option>
-                  <option>Tidak</option>
-                </select>
-              </li>
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Terdaftar di Negara</label>
-                <input type="text" placeholder="Masukkan nama perusahaan" className="input py-3 input-bordered flex-1" />
-              </li>
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Nama Brand/Komersial</label>
-                <input type="text" placeholder="Masukkan nama perusahaan" className="input py-3 input-bordered flex-1" />
-              </li>
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Tipe Entitas Hukum</label>
-                <input type="text" placeholder="Masukkan nama perusahaan" className="input py-3 input-bordered flex-1" />
-              </li>
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Tipe Entitas Hukum</label>
-                <input type="text" placeholder="Masukkan nama perusahaan" className="input py-3 input-bordered flex-1" />
-              </li>
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Nomor Induk Berusaha</label>
-                <input type="number" placeholder="Masukkan nama perusahaan" className="input py-3 input-bordered flex-1" />
-              </li>
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">NPWP Perusahaan</label>
-                <input type="number" placeholder="Masukkan nama perusahaan" className="input py-3 input-bordered flex-1" />
-              </li>
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Alamat Kantor Pusat</label>
-                <input type="number" placeholder="Masukkan nama perusahaan" className="input py-3 input-bordered flex-1" />
-              </li>
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                {/* Label kiri dengan lebar tetap */}
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Perusahaan & Negara</label>
+	return (
+		<div data-transition-page data-animate="enter" className="w-full px-8 py-4 fade-in-up fade-out-up">
+				<div className="card-body bg-base-100 rounded-box shadow-sm">
+					<h2 className="text-2xl">3. Masukkan informasi sebagai berikut</h2>
+					<div className="grid grid-cols-[auto_1fr] max-md:grid-cols-1 gap-x-3 gap-y-2">
+						<label className="label">Nama Legal Perusahaan</label>
+						<select className="select w-full">
+							<option>Ya</option>
+							<option>Tidak</option>
+						</select>
 
-                {/* Dua input sejajar di kanan, dengan wrapper konsisten */}
-                <div className="flex flex-1 gap-4">
-                  <input type="text" placeholder="Nama Perusahaan" className="input py-3 input-bordered w-full" />
-                  <input type="text" placeholder="Negara" className="input py-3 input-bordered w-full" />
-                </div>
-              </li>
+						<label className="label">Terdaftar di Negara</label>
+						<input type="text" placeholder="Masukkan nama perusahaan" className="input w-full" />
 
-              <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                {/* Label kiri dengan lebar tetap */}
-                <label className="w-full md:w-56 text-sm font-medium text-gray-700">Logo</label>
+						<label className="label">Nama Brand/Komersial</label>
+						<input type="text" placeholder="Masukkan nama perusahaan" className="input w-full" />
 
-                {/* Input file di kanan */}
-                <input type="file" className="file-input file-input-bordered flex-1" />
-              </li>
-            </ul>
+						<label className="label">Tipe Entitas Hukum</label>
+						<input type="text" placeholder="Masukkan nama perusahaan" className="input w-full" />
 
-            <div className="card-actions justify-end">
-              <TransitionLink href={"step-5"} className={"btn btn-success"}>
-                Simpan & Lanjut
-              </TransitionLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+						<label className="label">Tipe Entitas Hukum</label>
+						<input type="text" placeholder="Masukkan nama perusahaan" className="input w-full" />
+
+						<label className="label">Nomor Induk Berusaha</label>
+						<input type="number" placeholder="Masukkan nama perusahaan" className="input w-full" />
+
+						<label className="label">NPWP Perusahaan</label>
+						<input type="number" placeholder="Masukkan nama perusahaan" className="input w-full" />
+
+						<label className="label">Alamat Kantor Pusat</label>
+						<input type="number" placeholder="Masukkan nama perusahaan" className="input w-full" />
+
+						<label className="label">Perusahaan & Negara</label>
+						<div className="flex flex-1 gap-2">
+							<input type="text" placeholder="Nama Perusahaan" className="input w-full" />
+							<input type="text" placeholder="Negara" className="input w-full" />
+						</div>
+
+						<label className="label">Logo</label>
+						<input type="file" className="file-input w-full" />
+					</div>
+
+					<div className="card-actions justify-end">
+						<TransitionLink href={"step-5"} className={"btn btn-success"}>
+							Simpan & Lanjut
+						</TransitionLink>
+					</div>
+				</div>
+		</div>
+	);
 }
 
 export default Step3Page;
