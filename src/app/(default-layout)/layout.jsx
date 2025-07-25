@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { LogoLight } from "@/components/Logo";
 import TransitionLink from "@/components/TransitionLink";
 
@@ -192,18 +193,12 @@ function DefaultLayout({ children }) {
 
                     {/* miscellaneous */}
                     <div className="ml-auto">
-                        <button className="btn btn-primary">Button</button>
+                        <button className="btn btn-primary">Logout</button>
                     </div>
 
                 </nav>
             </div>
-            <div className="breadcrumbs text-sm w-full px-8 pt-1 shrink-0">
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Documents</a></li>
-                    <li>Add Document</li>
-                </ul>
-            </div>
+            <Breadcrumbs />
             {children}
         </main>
     );
