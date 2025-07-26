@@ -8,31 +8,34 @@ function Step2Page() {
 
 	return (
 		<div data-transition-page data-animate="enter" className="px-8 py-4 fade-in-up fade-out-up">
-				<div className="card-body rounded-box bg-base-100 shadow-sm overflow-x-auto">
-					<h2 className="text-2xl mx-auto">2. Apakah perusahaan anda memiliki holding company?</h2>
-					<div className="flex mt-7 gap-4 flex-col items-center">
-						<select value={hasHolding} onChange={(e) => setHasHolding(e.target.value)} className="select select-bordered w-full">
-							<option value="tidak">Tidak</option>
-							<option value="ya">Ya</option>
-						</select>
-						{hasHolding === "ya" && (
-							<>
-								<h2 className="text-center text-2xl ">Sebutkan nama perusahaannya</h2>
-								<select value={isRelevant} onChange={(e) => setIsRelevant(e.target.value)} className="select select-bordered w-full">
-									<option value="">Pilih</option>
-									<option value="ya">Ya</option>
-									<option value="tidak">Tidak</option>
-								</select>
-							</>
-						)}
-					</div>
-
-					<div className="card-actions justify-end">
-						<TransitionLink href="step-3" className="btn btn-success">
-							Simpan & Lanjut
-						</TransitionLink>
-					</div>
+			<div className="card-body rounded-box bg-base-100 shadow-sm overflow-x-auto">
+				<h2 className="text-2xl mx-auto">2. Apakah perusahaan anda memiliki holding company?</h2>
+				<div className="flex mt-7 gap-4 flex-col items-center">
+					<select value={hasHolding} onChange={(e) => setHasHolding(e.target.value)} className="select select-bordered w-full">
+						<option value="tidak">Tidak</option>
+						<option value="ya">Ya</option>
+					</select>
+					{hasHolding === "ya" && (
+						<>
+							<h2 className="text-center text-2xl ">Sebutkan nama perusahaannya</h2>
+							<select value={isRelevant} onChange={(e) => setIsRelevant(e.target.value)} className="select select-bordered w-full">
+								<option value="">Pilih</option>
+								<option value="ya">Ya</option>
+								<option value="tidak">Tidak</option>
+							</select>
+						</>
+					)}
 				</div>
+
+				<div className="card-actions justify-end">
+					<TransitionLink href="step-1" className="btn btn-info ml-auto">
+						Kembali
+					</TransitionLink>
+					<TransitionLink href="step-3" className="btn btn-success">
+						Simpan & Lanjut
+					</TransitionLink>
+				</div>
+			</div>
 		</div>
 
 		// <div data-transition-page data-animate="enter" className="fade-in-up fade-out-up">

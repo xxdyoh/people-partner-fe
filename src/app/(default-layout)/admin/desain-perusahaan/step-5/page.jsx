@@ -1,4 +1,5 @@
 'use client';
+import TransitionLink from "@/components/TransitionLink";
 import { useEffect, useState } from "react";
 
 function InputNamaPerusahaan({ ...props }) {
@@ -63,7 +64,7 @@ function Step5Page({ ...props }) {
         connectLine();
     }, []);
     return (
-        <div data-transition-page data-animate="enter" className="px-8 py-4 overflow-auto fade-in-up fade-out-up">
+        <div data-transition-page data-animate="enter" className="px-8 py-4 fade-in-up fade-out-up">
             <div className="p-6 grid grid-cols-4 rounded-box bg-base-100 gap-x-4 gap-y-2 shadow-sm">
                 <div className="col-span-4"><h2 className="text-2xl mb-4">5. Masukan informasi group perusahaan</h2></div>
                 <div>Nama Perusahaan</div>
@@ -146,6 +147,14 @@ function Step5Page({ ...props }) {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="col-span-4 flex gap-2">
+                    <TransitionLink href="step-3" className="btn btn-info ml-auto">
+                        Kembali
+                    </TransitionLink>
+                    <TransitionLink href="step-6" className="btn btn-success">
+                        Simpan & Lanjut
+                    </TransitionLink>
                 </div>
             </div>
         </div>
