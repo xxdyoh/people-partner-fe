@@ -122,7 +122,7 @@ function DesainPerusahaanStep5Page() {
         <form onSubmit={handleFormSubmit} data-transition-page data-animate="enter" className="pr-8 py-4 pl-14 w-full gap-x-3 gap-y-2 grid grid-cols-[auto_1fr] max-md:grid-cols-1 fade-in-up fade-out-up">
             <div className="col-span-full">
                 <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                    5.
+                    6.
                     <span>
                         Selanjutnya, buatlah struktur organisasi dasar
                     </span>
