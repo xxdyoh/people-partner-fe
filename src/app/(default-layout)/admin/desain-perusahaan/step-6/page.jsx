@@ -14,7 +14,7 @@ function DesainPerusahaanStep6Page() {
                 rel="stylesheet"
             />
             <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                6.
+                7.
                 <span>Cuti dan Izin</span>
             </h2>
             {/* <div className="items-center justify-center col-span-1 p-4 pb-3">
