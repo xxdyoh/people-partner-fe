@@ -5,7 +5,7 @@ function DesainPerusahaanStep7Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
-        navigateTo("step-7");
+        navigateTo("step-8");
     };
     return (
         <form onSubmit={handleFormSubmit} data-transition-page data-animate="enter" className="pr-8 py-4 pl-14 w-full gap-x-3 gap-y-2 grid grid-cols-[auto_1fr] max-md:grid-cols-1 fade-in-up fade-out-up">
