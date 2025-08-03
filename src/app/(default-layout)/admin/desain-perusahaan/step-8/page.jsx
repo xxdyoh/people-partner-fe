@@ -5,7 +5,7 @@ function DesainPerusahaanStep8Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
-        navigateTo("step-8");
+        navigateTo("step-9");
     };
     return (
         <form onSubmit={handleFormSubmit} data-transition-page data-animate="enter" className="pr-8 py-4 pl-14 w-full gap-x-3 gap-y-2 grid grid-cols-[auto_1fr] max-md:grid-cols-1 fade-in-up fade-out-up">
@@ -314,7 +314,7 @@ function DesainPerusahaanStep8Page() {
                 </div>
             </div>
             <div className="justify-end card-actions col-span-full">
-                <TransitionLink href="step-5" className="btn btn-info">
+                <TransitionLink href="step-7" className="btn btn-info">
                     Kembali
                 </TransitionLink>
                 <button className="btn btn-success">Simpan & Lanjut</button>

@@ -94,7 +94,7 @@ function DesainPerusahaanStep7Page() {
                 </div>
             </div>
             <div className="justify-end card-actions col-span-full">
-                <TransitionLink href="step-5" className="btn btn-info">
+                <TransitionLink href="step-6" className="btn btn-info">
                     Kembali
                 </TransitionLink>
                 <button className="btn btn-success">Simpan & Lanjut</button>
