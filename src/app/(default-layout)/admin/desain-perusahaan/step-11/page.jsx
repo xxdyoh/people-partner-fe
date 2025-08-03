@@ -14,8 +14,8 @@ function DesainPerusahaanStep11Page() {
                 rel="stylesheet"
             />
             <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                10.
-                <span>Hirarki Organisasi</span>
+                12.
+                <span>Kelompok Jabatan (Job Family)</span>
             </h2>
             {/* <div className="items-center justify-center col-span-1 p-4 pb-3">
                 <div className="mb-0">

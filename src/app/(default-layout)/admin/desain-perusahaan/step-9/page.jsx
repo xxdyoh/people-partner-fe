@@ -14,7 +14,7 @@ function DesainPerusahaanStep9Page() {
                 rel="stylesheet"
             />
             <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                9.
+                10.
                 <span>Security Group</span>
             </h2>
             <div className="gap-10 mt-2 col-span-1 min-w-[400px] flex">
