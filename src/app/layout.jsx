@@ -5,7 +5,7 @@ function RootLayout({ children }) {
     
     return (
         <html lang="en" data-theme="peoplepartner">
-            <body className="overflow-hidden bg-stripe-diagonal stripe-color-primary/[0.05]">
+            <body className="overflow-hidden bg-white">
                 <LinkInterceptor />
                 {children}
             </body>

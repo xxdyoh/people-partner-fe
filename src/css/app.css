@@ -52,6 +52,11 @@
     border-end-end-radius: var(--join-ee, var(--radius-field));
 }
 
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+
 [data-animate="enter"].fade-in {
     animation: fadeIn 0.5s both;
 }

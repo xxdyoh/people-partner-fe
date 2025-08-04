@@ -1,23 +1,42 @@
+import { Mail, User } from 'lucide-react';
+import { LogoDark } from "@/components/Logo";
+import { Toaster } from 'react-hot-toast';
+
 function AuthLayout({ children }) {
     return (
-        <div id="authLayout" data-animate="enter" className="relative flex min-w-screen min-h-screen fade-out fade-in">
-            <img src="/assets/img/pexels-jeshoots.jpg" loading="lazy" alt="login background cover" className="h-full w-full absolute object-cover object-top-right" />
-            <div className="absolute w-full h-full bg-base-content/70"></div>
-            <div className="z-10 flex justify-center items-center min-lg:ml-16 min-md:ml-8 w-96 min-h-full bg-base-100 shrink-0">
-                <div className="w-16 h-full bg-primary bg-stripe-diagonal stripe-color-base-content/20"></div>
-                <div className="w-full">
+        <div className="min-h-screen bg-black flex flex-col md:flex-row">
+            <Toaster position="top-center" reverseOrder={false} /> {/* Tambahkan ini */}
+
+            <div className="w-full md:w-1/2 bg-black p-6 md:p-12 lg:p-16 flex flex-col justify-center relative z-10">
+                <div className="mb-8 flex items-center">
+                    <LogoDark className="size-20" />
+                    <div>
+                        <h1 className="text-white text-2xl font-bold">People</h1>
+                        <h2 className="text-blue-500 text-2xl font-bold -mt-1">Partner</h2>
+                    </div>
+                </div>
+
+                <h1 className="text-white text-4xl md:text-5xl font-bold mb-4">PEOPLE PARTNER SYSTEM</h1>
+                <p className="italic text-white text-lg md:text-xl mb-8 max-w-lg">
+                    We believe that you as part of our family is the most important people to be managed and taken care of. Allow us to give you great people experience.
+                </p>
+
+                <div className="relative">
                     {children}
                 </div>
             </div>
-            <div data-animate="enter" className="z-10 flex justify-center items-center w-full min-h-full text-base-100 fade-in-left" style={{animationDelay: '0.3s'}}>
-                <div className="mx-16 max-w-2xl text-start">
-                    <span className="font-semibold text-5xl">PEOPLE PARTNER SYSTEM</span><br />
-                    <span className="opacity-70 text-xl italic">
-                        We believe that you as part of our family is the
-                        most important people to be managed and taken
-                        care of. Allow us to give you great people
-                        experience.
-                    </span>
+
+            <div className="hidden md:block md:w-1/2 bg-black relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] opacity-30 bg-cover bg-center" />
+                <div className="absolute inset-0">
+                    <Mail className="absolute top-1/4 right-1/4 text-gray-400 h-8 w-8" />
+                    <Mail className="absolute bottom-1/3 left-1/3 text-gray-400 h-8 w-8" />
+                    <Mail className="absolute top-2/3 right-1/3 text-gray-400 h-8 w-8" />
+
+                    <User className="absolute top-[20%] left-1/4 text-gray-500 h-16 w-16" />
+                    <User className="absolute bottom-1/4 right-1/5 text-gray-500 h-16 w-16" />
+                    <User className="absolute top-2/3 left-1/5 text-gray-500 h-16 w-16" />
+                    <User className="absolute top-1/3 right-1/3 text-gray-500 h-16 w-16" />
                 </div>
             </div>
         </div>
