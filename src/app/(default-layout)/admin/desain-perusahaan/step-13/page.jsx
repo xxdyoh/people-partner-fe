@@ -1,11 +1,11 @@
 "use client";
 import TransitionLink, { navigateTo } from "@/components/TransitionLink";
 
-function DesainPerusahaanStep13Page() {
+function DesainPerusahaanStep12Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
-        navigateTo("step-8");
+        navigateTo("step-14");
     };
     return (
         <form onSubmit={handleFormSubmit} data-transition-page data-animate="enter" className="pr-8 py-4 pl-14 w-full gap-x-3 gap-y-2 grid grid-cols-[auto_1fr] max-md:grid-cols-1 fade-in-up fade-out-up">
@@ -14,95 +14,171 @@ function DesainPerusahaanStep13Page() {
                 rel="stylesheet"
             />
             <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                8.
-                <span>Hari Libur Nasional</span>
+                13.
+                <span>Job Repository - List</span>
             </h2>
-            {/* <div className="items-center justify-center col-span-1 p-4 pb-3">
-                <div className="mb-0">
-                    <h2 className="text-xl text-center font-medium mb-2 block">Pilih Perusahaan</h2>
-                    <select className="select md:w-[300px] select-bordered w-full">
-                        <option>PT A</option>
-                        <option>PT B</option>
-                        <option>PT C</option>
-                    </select>
-                </div>
-            </div> */}
-            <div className="gap-10 mt-2 lg:grid-cols-2 md:col-span-full sm:col-span-1 grid col-span-1 md:grid-cols-1">
-                <div className="col-span-1">
-                    <div className="mt-1 rounded-lg flex-1 px-4 pb-4 -mx-4">
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium flex">Perusahaan</label>
-                            <select name="" className="select w-full" id="">
-                                <option value="">Test</option>
-                                <option value="">Test</option>
-                                <option value="">Test</option>
-                            </select>
+            <div className="gap-10 mt-2 lg:grid-cols-1 md:col-span-full sm:col-span-1 grid col-span-1 md:grid-cols-1">
+                <div className="col-span-1 max-w-screen p-0 overflow-x-auto">
+                    <div className="grid-cols-7 space-x-1 grid min-w-[1000px]">
+                        <div className="col-span-1">
+                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
+                                <h3 className="text-sm text-center font-semibold">PERUSAHAAN</h3>
+                            </div>
+                            <div className="pl-1">
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Nama Posisi</label>
-                            <input type="text" name="" defaultValue={"Free Text"} className="input w-full" id="" />
+                        <div className="col-span-1">
+                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
+                                <h3 className="text-sm text-center font-semibold">NAMA POSISI</h3>
+                            </div>
+                            <div className="pl-1">
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">DIREKTUR UTAMA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">DIREKTUR PRODUKSI</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">KEPALA BAGIAN PRODUKSI</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1"> DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1"> DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Melapor Kepada</label>
-                            <input type="text" defaultValue={"Free Text"} name="" className="input w-full" id="" />
+                        <div className="col-span-1">
+                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
+                                <h3 className="text-sm text-center font-semibold">MELAPOR KEPADA</h3>
+                            </div>
+                            <div className="pl-1 text-center">
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium flex">Unit Kerja</label>
-                            <select name="" className="select w-full" id="">
-                                <option value="">Test</option>
-                                <option value="">Test</option>
-                                <option value="">Test</option>
-                            </select>
+                        <div className="col-span-1">
+                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
+                                <h3 className="text-sm text-center font-semibold">UNIT KERJA</h3>
+                            </div>
+                            <div className="pl-1 text-center">
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Departemen</label>
-                            <input type="text" defaultValue={"Free Text"} name="" className="input w-full" id="" />
+                        <div className="col-span-1">
+                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
+                                <h3 className="text-sm text-center font-semibold">DEPARTEMEN</h3>
+                            </div>
+                            <div className="pl-1 text-center">
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Divisi</label>
-                            <input type="text" defaultValue={"Free Text"} name="" className="input w-full" id="" />
+                        <div className="col-span-1">
+                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
+                                <h3 className="text-sm text-center font-semibold">DEPARTEMEN</h3>
+                            </div>
+                            <div className="pl-1 text-center">
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Direktorat</label>
-                            <input type="text" defaultValue={"Free Text"} name="" className="input w-full" id="" />
-                        </div>
-                    </div>
-                </div>
-                <div className="col-span-1">
-                    <div className="mt-1 rounded-lg flex-1 px-4 pb-4 -mx-4">
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium flex">Job Family</label>
-                            <input type="text" name="" defaultValue={"Free Text"} className="input w-full" id="" />
-                        </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium flex">Sub Job Family</label>
-                            <input type="text" name="" defaultValue={"Free Text"} className="input w-full" id="" />
-                        </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Kode Posisi</label>
-                            <input type="text" defaultValue={"Free Text"} name="" className="input w-full" id="" />
-                        </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium flex">Kode Kelompok Jabatan</label>
-                            <input type="text" defaultValue={"Free Text"} name="" className="input w-full" id="" />
-                        </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Kode Kelompok Jabatan</label>
-                            <input type="text" defaultValue={"Free Text"} name="" className="input w-full" id="" />
-                        </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Lorem Ipsum</label>
-                            <input type="text" defaultValue={""} name="" className="input w-full" id="" />
-                        </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Lorem Ipsum</label>
-                            <input type="text" defaultValue={""} name="" className="input w-full" id="" />
+                        <div className="col-span-1">
+                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
+                                <h3 className="text-sm text-center font-semibold">SUB-KEL JABATAN</h3>
+                            </div>
+                            <div className="pl-1 text-center">
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
+                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="justify-end card-actions col-span-full">
-                <TransitionLink href="step-6" className="btn btn-info">
+                <TransitionLink href="step-12" className="btn btn-info">
                     Kembali
                 </TransitionLink>
                 <button className="btn btn-success">Simpan & Lanjut</button>
@@ -111,4 +187,4 @@ function DesainPerusahaanStep13Page() {
     );
 }
 
-export default DesainPerusahaanStep13Page;
+export default DesainPerusahaanStep12Page;

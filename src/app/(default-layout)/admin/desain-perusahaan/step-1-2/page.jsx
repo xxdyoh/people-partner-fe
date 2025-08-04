@@ -11,7 +11,7 @@ function DesainPerusahaanStep1Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
-        navigateTo('step-2');
+        navigateTo('step-3');
     }
 
     return (

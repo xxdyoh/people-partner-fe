@@ -1,7 +1,7 @@
 "use client";
 import TransitionLink, { navigateTo } from "@/components/TransitionLink";
 
-function DesainPerusahaanStep12Page() {
+function DesainPerusahaanStep11Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
@@ -14,163 +14,104 @@ function DesainPerusahaanStep12Page() {
                 rel="stylesheet"
             />
             <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                13.
-                <span>Job Repository - List</span>
+                12.
+                <span>Kelompok Jabatan (Job Family)</span>
             </h2>
-            <div className="gap-10 mt-2 lg:grid-cols-1 md:col-span-full sm:col-span-1 grid col-span-1 md:grid-cols-1">
-                <div className="col-span-1 max-w-screen p-0 overflow-x-auto">
-                    <div className="grid-cols-7 space-x-1 grid min-w-[1000px]">
-                        <div className="col-span-1">
-                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
-                                <h3 className="text-sm text-center font-semibold">PERUSAHAAN</h3>
-                            </div>
-                            <div className="pl-1">
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                            </div>
+            {/* <div className="items-center justify-center col-span-1 p-4 pb-3">
+                <div className="mb-0">
+                    <h2 className="text-xl text-center font-medium mb-2 block">Pilih Perusahaan</h2>
+                    <select className="select md:w-[300px] select-bordered w-full">
+                        <option>PT A</option>
+                        <option>PT B</option>
+                        <option>PT C</option>
+                    </select>
+                </div>
+            </div> */}
+            <div className="gap-10 mt-2 lg:grid-cols-3 md:col-span-full sm:col-span-1 grid col-span-1 grid-cols-1">
+                <div className="col-span-1">
+                    <div className="bg-primary text-primary-content py-2 rounded-md">
+                        <h3 className="text-lg text-center font-semibold">FORM</h3>
+                    </div>
+                    <div className="mt-1 rounded-lg flex-1 px-4 pb-4 -mx-4">
+                        <div className="my-2">
+                            <label htmlFor="" className="font-medium">KELOMPOK JABATAN</label>
+                            <input type="text" onInput={(e) => {
+                                e.target.value = e.target.value.toUpperCase()
+                            }} defaultValue={"PRODUKSI"} className="input w-full" name="" id="" />
                         </div>
-                        <div className="col-span-1">
-                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
-                                <h3 className="text-sm text-center font-semibold">NAMA POSISI</h3>
-                            </div>
-                            <div className="pl-1">
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">DIREKTUR UTAMA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">DIREKTUR PRODUKSI</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">KEPALA BAGIAN PRODUKSI</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1"> DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1"> DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
-                                </div>
-                            </div>
+
+                        <div className="my-2">
+                            <label htmlFor="" className="font-medium">SUB-KELOMPOK JABATAN</label>
+                            <input type="text" onInput={(e) => {
+                                e.target.value = e.target.value.toUpperCase()
+                            }} defaultValue={"MANAJEMEN PRODUKSI"} name="" className="input w-full" id="" />
                         </div>
-                        <div className="col-span-1">
-                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
-                                <h3 className="text-sm text-center font-semibold">MELAPOR KEPADA</h3>
-                            </div>
-                            <div className="pl-1 text-center">
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                    </div>
+                    <button type="button" className="btn btn-md btn-success mx-0">Tambah</button>
+                </div>
+                <div className="col-span-2">
+                    <div className="max-w-screen overflow-x-auto">
+                        <div className="lg:grid-cols-4 grid grid-cols-4 min-w-[600px] space-x-1">
+                            <div className="col-span-1">
+                                <div className="bg-info text-base-100 py-0 rounded-sm">
+                                    <h3 className="text-sm text-center font-normal h-15 flex items-center justify-center">KELOMPOK JABATAN (JOB FAMILY)</h3>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">Manajemen Ekslusif</span>
+                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">PRODUKSI</span>
+                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">DIREKTUR KEUANGAN, KEPALA BAGIAN KEUANGAN</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-span-1">
-                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
-                                <h3 className="text-sm text-center font-semibold">UNIT KERJA</h3>
-                            </div>
-                            <div className="pl-1 text-center">
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1"></span>
+                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-span-1">
-                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
-                                <h3 className="text-sm text-center font-semibold">DEPARTEMEN</h3>
-                            </div>
-                            <div className="pl-1 text-center">
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                            <div className="col-span-1">
+                                <div className="bg-info text-base-100 py-0 rounded-sm">
+                                    <h3 className="text-sm text-center font-normal h-15 flex items-center justify-center">KODE JOB FAMILY</h3>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">JFC001</span>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">JC002</span>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">JC002</span>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-span-1">
-                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
-                                <h3 className="text-sm text-center font-semibold">DEPARTEMEN</h3>
-                            </div>
-                            <div className="pl-1 text-center">
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                            <div className="col-span-1">
+                                <div className="bg-info text-base-100 py-0 rounded-sm">
+                                    <h3 className="text-sm text-center font-normal h-15 flex items-center justify-center">SUB-KELOMPOK JABATAN (SUB JOB FAMILY)</h3>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">-</span>
+                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">Manajemen Produksi</span>
+                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">Pengawasan Produksi</span>
+                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-span-1">
-                            <div className="bg-primary text-base-100 h-10 flex items-center justify-center rounded-sm">
-                                <h3 className="text-sm text-center font-semibold">SUB-KEL JABATAN</h3>
-                            </div>
-                            <div className="pl-1 text-center">
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                            <div className="col-span-1">
+                                <div className="bg-info text-base-100 py-0 rounded-sm">
+                                    <h3 className="text-sm text-center font-normal h-15 flex items-center justify-center">KODE JABATAN</h3>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">JC001</span>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">JC002</span>
                                 </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-0 h-[80px] text-sm pb-0">
-                                    <span className="flex-1">PT KAMU ADA AJA</span>
+                                <div className="flex items-center gap-4 mb-1 pb-0">
+                                    <span defaultValue="Jenis Izin" className="flex-1">JC003</span>
                                 </div>
                             </div>
                         </div>
@@ -187,4 +128,4 @@ function DesainPerusahaanStep12Page() {
     );
 }
 
-export default DesainPerusahaanStep12Page;
+export default DesainPerusahaanStep11Page;

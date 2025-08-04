@@ -1,7 +1,7 @@
 "use client";
 import TransitionLink, { navigateTo } from "@/components/TransitionLink";
 
-function DesainPerusahaanStep10Page() {
+function DesainPerusahaanStep9Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
@@ -14,160 +14,355 @@ function DesainPerusahaanStep10Page() {
                 rel="stylesheet"
             />
             <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                11.
-                <span>Hirarki Organisasi</span>
+                10.
+                <span>Security Group</span>
             </h2>
-            <div className="gap-10 mt-2 lg:grid-cols-3 md:col-span-full sm:col-span-1 grid col-span-1 grid-cols-1">
+            <div className="gap-10 mt-2 col-span-1 min-w-[400px] flex">
+                {/* Jumlah di baris di kolom kiri harus sama dengan jumlah baris di kolom kanan */}
                 <div className="col-span-1">
-                    <div className="bg-primary text-primary-content py-2 rounded-md">
-                        <h3 className="text-lg text-center font-semibold">FORM</h3>
+                    <div className="bg-info w-[200px] text-info-content py-0 rounded-md">
+                        <h3 className="text-sm text-center font-normal">MODUL MASTER ADMIN</h3>
                     </div>
                     <div className="mt-1 rounded-lg flex-1 px-4 pb-4 -mx-4">
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Direktorat</label>
-                            <input type="text" onInput={(e) => {
-                                e.target.value = e.target.value.toUpperCase()
-                            }} defaultValue={"UTAMA"} className="input w-full" name="" id="" />
+                        <div className="">
+                            <label htmlFor="" className="">MENU 1</label>
                         </div>
-
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Divisi</label>
-                            <input type="text" onInput={(e) => {
-                                e.target.value = e.target.value.toUpperCase()
-                            }} defaultValue={"SALES"} name="" className="input w-full" id="" />
+                        <div className="">
+                            <label htmlFor="" className="">MENU 2</label>
                         </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Departemen</label>
-                            <input type="text" onInput={(e) => {
-                                e.target.value = e.target.value.toUpperCase()
-                            }} defaultValue={"DIRECT SALES"} name="" className="input w-full" id="" />
+                        <div className="">
+                            <label htmlFor="" className="">MENU 3</label>
                         </div>
-                        <div className="my-2">
-                            <label htmlFor="" className="font-medium">Unit Kerja</label>
-                            <input type="text" onInput={(e) => {
-                                e.target.value = e.target.value.toUpperCase()
-                            }} defaultValue={"-"} name="" className="input w-full" id="" />
+                        <div className="">
+                            <label htmlFor="" className="">-</label>
                         </div>
                     </div>
-                    <button type="button" className="btn btn-md btn-success mx-0">Tambah</button>
+                    <div className="bg-info w-[200px] text-info-content py-0 rounded-md">
+                        <h3 className="text-sm text-center font-normal">MODUL LAYANAN MANDIRI</h3>
+                    </div>
+                    <div className="mt-1 rounded-lg flex-1 px-4 pb-4 -mx-4">
+                        <div className="">
+                            <label htmlFor="" className="">MENU 1</label>
+                        </div>
+                        <div className="">
+                            <label htmlFor="" className="">MENU 2</label>
+                        </div>
+                        <div className="">
+                            <label htmlFor="" className="">MENU 3</label>
+                        </div>
+                    </div>
                 </div>
-                <div className="col-span-2">
-                    <div className="max-w-screen overflow-x-auto">
-                        <div className="lg:grid-cols-4 grid grid-cols-4 min-w-[600px] space-x-1">
-                            <div className="col-span-1">
-                                <div className="bg-info text-base-100 py-0 rounded-sm">
-                                    <h3 className="text-lg text-center font-semibold">DIREKTORAT</h3>
+
+                <div className="max-w-screen overflow-x-auto">
+                    <div className="lg:grid-cols-10 grid grid-cols-10 min-w-[1000px] space-x-5">
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">DIREKTUR UTAMA</h3>
+                            </div>
+                            {/* Baris Atas */}
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
                             </div>
-                            <div className="col-span-1">
-                                <div className="bg-info text-base-100 py-0 rounded-sm">
-                                    <h3 className="text-lg text-center font-semibold">DIREKTORAT</h3>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
                             </div>
-                            <div className="col-span-1">
-                                <div className="bg-info text-base-100 py-0 rounded-sm">
-                                    <h3 className="text-lg text-center font-semibold">DIREKTORAT</h3>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">DIREKSI</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
-                                </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
                             </div>
-                            <div className="col-span-1">
-                                <div className="bg-info text-base-100 py-0 rounded-sm">
-                                    <h3 className="text-lg text-center font-semibold">DIREKTORAT</h3>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">GRUP DIVISI</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
-                                <div className="flex items-center gap-4 mb-1 pb-0">
-                                    <span defaultValue="Jenis Izin" className="flex-1">HARI LIBUR</span>
-                                    <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">DIVISI</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">GRUP DEPARTEMEN</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">DEPARTEMEN</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px] flex-wrap">
+                                <h3 className="text-xs text-center font-normal">GRUP UNIT KERJA</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">UNIT KERJA</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">TEAM</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-[100px] h-[30px]">
+                                <h3 className="text-xs text-center font-normal">INDIVIDU</h3>
+                            </div>
+                            <div className="menu-pertama">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                            {/* Baris Bawah */}
+                            <div className="mt-[35px]">
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
+                                </div>
+                                <div className="text-center">
+                                    <input type="checkbox" />
                                 </div>
                             </div>
                         </div>
@@ -184,4 +379,4 @@ function DesainPerusahaanStep10Page() {
     );
 }
 
-export default DesainPerusahaanStep10Page;
+export default DesainPerusahaanStep9Page;
