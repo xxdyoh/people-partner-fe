@@ -14,7 +14,7 @@ function DesainPerusahaanStep7Page() {
                 rel="stylesheet"
             />
             <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                7.
+                8.
                 <span>Hari Libur Nasional</span>
             </h2>
             {/* <div className="items-center justify-center col-span-1 p-4 pb-3">

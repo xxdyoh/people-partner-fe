@@ -148,8 +148,7 @@ function DesainPerusahaanStep5Page() {
                     <div className="w-full">
                         <div className="grid -ml-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {cards.map((card, cardIndex) => (
-                                <div className="" key={cardIndex}>
-                                    <div className="card-body">
+                                <div className="p-6 border-base-300 rounded-box def-border-w" key={cardIndex}>
                                         <div className="bg-primary border-primary text-primary-content border-b  px-4 py-2 rounded-md">
                                             <h2 className="card-title text-lg">{card.title}</h2>
                                         </div>
@@ -184,10 +183,8 @@ function DesainPerusahaanStep5Page() {
                                                 </li>
                                             ))}
                                         </ul>
-
                                         {/* Tombol Tambah */}
                                         <ButtonAddItem type="button" onClick={() => handleAddItem(cardIndex)}>Tambah {card.title}</ButtonAddItem>
-                                    </div>
                                 </div>
                             ))}
                         </div>

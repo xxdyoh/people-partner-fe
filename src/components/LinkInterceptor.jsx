@@ -1,10 +1,9 @@
 'use client';
 
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-function LinkInterceptor
-() {
+function LinkInterceptor () {
     const router = useRouter();
     useEffect(() => {
         function handleLinkClick(e) {
