@@ -20,7 +20,7 @@ function LoginPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`, form);
+            const res = await axios.post("https://people-partner-be-production.up.railway.app/api/auth/login", form);
 
             // toast.success("Login sukses!");
 

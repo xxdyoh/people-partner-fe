@@ -23,7 +23,7 @@ function SignUpPage() {
         }
 
         try {
-            const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/register`, form);
+            const res = await axios.post("https://people-partner-be-production.up.railway.app/api/auth/register", form);
             // setMessage(res.data.message);
             // Redirect ke login
             window.location.href = "/auth/login";
