@@ -40,51 +40,51 @@ function DesainPerusahaanStep6Page() {
                             <span>Hapus</span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Cuti" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Cuti" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-20 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-20 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Cuti" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Cuti" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-20 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-20 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Cuti" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Cuti" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-20 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-20 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Cuti" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Cuti" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-20 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-20 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Cuti" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Cuti" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-20 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-20 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Cuti" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Cuti" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-20 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-20 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Cuti" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Cuti" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-20 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-20 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Cuti" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Cuti" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-20 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-20 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                     </div>
@@ -103,51 +103,51 @@ function DesainPerusahaanStep6Page() {
                             <span>Hapus</span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Izin" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Izin" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-40 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-40 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Izin" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Izin" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-40 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-40 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Izin" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Izin" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-40 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-40 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Izin" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Izin" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-40 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-40 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Izin" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Izin" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-40 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-40 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Izin" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Izin" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-40 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-40 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Izin" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Izin" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-40 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-40 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                         <div className="flex items-center gap-4 border-b border-gray-200 mb-2 pb-1">
-                            <input defaultValue="Jenis Izin" className="input input-sm input-bordered flex-1 text-sm" />
+                            <input defaultValue="Jenis Izin" className="input-sm flex-1 text-sm" />
                             <input type="checkbox" className="checkbox" />
-                            <input type="text" defaultValue="30" className="w-40 text-right input input-sm input-bordered" />
+                            <input type="text" defaultValue="30" className="w-40 text-right" />
                             <span className="px-2 cursor-pointer"><i className="ri-delete-bin-line text-error"></i></span>
                         </div>
                     </div>

@@ -5,7 +5,7 @@ function DesainPerusahaanStep7Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
-        navigateTo("step-7");
+        navigateTo("step-8");
     };
     return (
         <form onSubmit={handleFormSubmit} data-transition-page data-animate="enter" className="pr-8 py-4 pl-14 w-full gap-x-3 gap-y-2 grid grid-cols-[auto_1fr] max-md:grid-cols-1 fade-in-up fade-out-up">
@@ -14,7 +14,7 @@ function DesainPerusahaanStep7Page() {
                 rel="stylesheet"
             />
             <h2 className="flex gap-2 text-2xl col-span-full -ml-6">
-                7.
+                8.
                 <span>Hari Libur Nasional</span>
             </h2>
             {/* <div className="items-center justify-center col-span-1 p-4 pb-3">
@@ -94,7 +94,7 @@ function DesainPerusahaanStep7Page() {
                 </div>
             </div>
             <div className="justify-end card-actions col-span-full">
-                <TransitionLink href="step-5" className="btn btn-info">
+                <TransitionLink href="step-6" className="btn btn-info">
                     Kembali
                 </TransitionLink>
                 <button className="btn btn-success">Simpan & Lanjut</button>
